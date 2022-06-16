@@ -14,6 +14,8 @@ go mod init github.com/FranciscoOrtizCastillo/inventory
 
 go get gopkg.in/yaml.v3
 go get go.uber.org/fx
+go get github.com/jmoiron/sqlx
+go get github.com/go-sql-driver/mysql
 
 ```
 
@@ -35,3 +37,4 @@ docker stop mariadb
 
 docker start mariadb
 ```
+

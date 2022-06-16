@@ -5,6 +5,8 @@ go 1.18
 require gopkg.in/yaml.v3 v3.0.1
 
 require (
+	github.com/go-sql-driver/mysql v1.6.0 // indirect
+	github.com/jmoiron/sqlx v1.3.5 // indirect
 	go.uber.org/atomic v1.6.0 // indirect
 	go.uber.org/dig v1.14.0 // indirect
 	go.uber.org/fx v1.17.1 // indirect
