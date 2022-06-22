@@ -38,7 +38,22 @@ docker stop mariadb
 docker start mariadb
 ```
 
+## mockery
+
 https://github.com/vektra/mockery
+
+````
+go install github.com/vektra/mockery/v2@latest
+
+brew install mockery
+brew upgrade mockery
+
+go generate ./...
+
+go get github.com/stretchr/testify/mock
+
+
+```
 
 8:30
 
