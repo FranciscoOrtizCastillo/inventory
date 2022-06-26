@@ -17,11 +17,17 @@ go get go.uber.org/fx
 go get github.com/jmoiron/sqlx
 go get github.com/go-sql-driver/mysql
 
+#Instalar todas las dependencias
+go get ./...   
+
+# o
+go mod tidy
+
 ```
 
 # Uso de MariaDB con Docker
 
-````
+```
 docker pull mariadb:10.7.4
 
 docker image ls
@@ -55,5 +61,8 @@ go get github.com/stretchr/testify/mock
 
 ```
 
-9:43
+https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/09.6.html
 
+
+
+42
