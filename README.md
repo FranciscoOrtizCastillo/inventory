@@ -65,4 +65,9 @@ https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/09.6.ht
 
 
 
-42
+## Añadir roles
+
+```
+go generate ./...
+
+```

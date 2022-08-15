@@ -22,31 +22,32 @@ func main() {
 			service.New,
 		),
 		fx.Invoke(
-			/*func(s *settings.Settings) {
-				log.Println(s)
-			},
-			func(db *sqlx.DB) {
-				_, err := db.Query("SELECT * FROM USERS")
-				if err != nil {
-					panic(err)
-				}
-			},*/
-			func(ctx context.Context, serv service.Service) {
-				//TODO
-				err := serv.RegisterUser(ctx, "test@email.com", "TestUser", "password123")
-				if err != nil {
-					panic(err)
-				}
+		/* Codigo solo para verificar que funciona todo
+		func(s *settings.Settings) {
+			log.Println(s)
+		},
+		func(db *sqlx.DB) {
+			_, err := db.Query("SELECT * FROM USERS")
+			if err != nil {
+				panic(err)
+			}
+		},
+		func(ctx context.Context, serv service.Service) {
+			//TODO
+			err := serv.RegisterUser(ctx, "test@email.com", "TestUser", "password123")
+			if err != nil {
+				panic(err)
+			}
 
-				u, err := serv.LoginUser(ctx, "test@email.com", "password123")
-				if err != nil {
-					panic(err)
-				}
+			u, err := serv.LoginUser(ctx, "test@email.com", "password123")
+			if err != nil {
+				panic(err)
+			}
 
-				if u.Name != "TestUser" {
-					panic("Invalid user")
-				}
-			},
+			if u.Name != "TestUser" {
+				panic("Invalid user")
+			}
+		},*/
 		),
 	)
 
