@@ -71,3 +71,24 @@ https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/09.6.ht
 go generate ./...
 
 ```
+
+## Añadir productos
+
+1.- Crear metodos en repository 
+
+    SaveProduct
+	GetProducts
+	GetProductByID
+
+2.- Implementar los metodos en products.repository y crear entity product
+
+3.- Crear model products
+
+4.- Implementar los metodos en products.service 
+
+```
+go generate ./...
+
+```
+
+5.- Crear unit test para el servicio
